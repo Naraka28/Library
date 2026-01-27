@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      :root {
+        --color-bg-main: #faf1e6;
+        --color-bg-secondary: #fdfaf6;
+        --color-text-soft: #e4efe7;
+        --color-action: #99bc85;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-[var(--color-action)] px-6 py-4 shadow-md">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-6">
+        <h1 class="text-xl font-semibold text-[var(--color-text-soft)]">
+          Booktique
+        </h1>
+
+        <ul
+          class="hidden md:flex items-center gap-6 text-[var(--color-text-soft)] font-medium"
+        >
+          <li class="cursor-pointer hover:underline">Home</li>
+          <li class="cursor-pointer hover:underline">Favorites</li>
+        </ul>
+
+        <div class="flex items-center gap-2">
+          <input
+            type="text"
+            placeholder="Buscar libros..."
+            class="px-3 py-1.5 rounded-lg border border-[var(--color-text-soft)] bg-[var(--color-bg-main)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-action)]"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <main id="main" class="bg-[var(--color-bg-main)]"></main>
+    <footer></footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
