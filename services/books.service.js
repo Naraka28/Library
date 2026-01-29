@@ -1,6 +1,15 @@
 const baseUrl = "https://gutendex.com/books";
 export async function getBooks() {
-  const response = await fetch(baseUrl);
+  const response = await fetch(`${baseUrl}?sort=ascending`);
+  if (!response.ok) {
+    console.error(response.statusText);
+  }
+  const data = await response.json();
+  console.log(data);
+  return data;
+}
+export async function getBooksPopular() {
+  const response = await fetch(`${baseUrl}`);
   if (!response.ok) {
     console.error(response.statusText);
   }
@@ -27,3 +36,5 @@ export async function searchBook(query) {
   console.log(data);
   return data;
 }
+
+export function filtrar() {}
