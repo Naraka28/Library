@@ -23,11 +23,7 @@ export function renderNavbar() {
         </ul>
 
         <div class="flex items-center gap-2">
-          <input
-            type="text"
-            placeholder="Buscar libros..."
-            class="px-3 py-1.5 rounded-lg border border-[var(--color-text-soft)] bg-[var(--color-bg-main)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-action)]"
-          />
+
           <div class="flex items-center gap-4">
           <span class="text-sm text-[var(--color-text-soft)]">
             Hola, <strong>${session.name}</strong>

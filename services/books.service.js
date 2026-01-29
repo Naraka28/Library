@@ -36,5 +36,3 @@ export async function searchBook(query) {
   console.log(data);
   return data;
 }
-
-export function filtrar() {}
